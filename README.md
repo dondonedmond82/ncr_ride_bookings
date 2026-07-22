@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # NCR Ride-Hailing Data Analysis 🚖
 
-A data science and machine learning study of ride bookings in the National Capital Region (Delhi NCR), covering exploratory analysis, business insights, and a full suite of ML models — regression, a linear perceptron, classification, clustering (K-Means & DBSCAN), and a neural network.
+A data science and machine learning study of ride bookings in the National Capital Region (Delhi NCR) — exploratory analysis, business insights, and a full suite of ML models (regression, perceptron, classification, clustering, and a neural network).
 
 ## Overview
 
@@ -11,7 +10,7 @@ This project analyzes **150,000 ride bookings** across **176 pickup/drop localit
 
 ## Contents
 
-The analysis is organized into a single Jupyter notebook, `NCR_Ride_Booking_Analysis.ipynb`, with the following sections:
+The analysis lives in a single Jupyter notebook, `NCR_Ride_Booking_Analysis.ipynb`:
 
 1. Data Loading & Cleaning
 2. Exploratory Data Analysis
@@ -43,7 +42,7 @@ The notebook expects a CSV file named `ncr_ride_bookings.csv` in the project roo
 
 ## What's Analyzed
 
-- **Town/Area performance** — completion rate, demand volume, and ratings by pickup locality
+- **Town/area performance** — completion rate, demand volume, and ratings by pickup locality
 - **Route analysis** — busiest and highest revenue-per-km pickup → drop pairs
 - **Vehicle type performance** — completion rate, revenue per km, and driver ratings by vehicle category
 - **Cancellation patterns** — top reasons for customer and driver cancellations
@@ -55,7 +54,7 @@ The notebook expects a CSV file named `ncr_ride_bookings.csv` in the project roo
 |---|---|
 | Predict booking value (fare) | Linear Regression |
 | Predict ride completion | Perceptron, Logistic Regression, Random Forest, Neural Network (MLP) |
-| Ride segmentation | K-Means clustering (with elbow method + PCA visualization) |
+| Ride segmentation | K-Means clustering (elbow method + PCA visualization) |
 | Outlier / anomaly detection | DBSCAN |
 
 Model performance is compared using accuracy, precision, recall, and F1-score, with a final summary table and chart ranking all completion-prediction models.
@@ -79,7 +78,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn
 
 ## Usage
 
-1. Place `ncr_ride_bookings.csv` in the project root (same directory as the notebook).
+1. Clone the repo and place `ncr_ride_bookings.csv` in the project root (same directory as the notebook).
 2. Launch Jupyter and open the notebook:
 
 ```bash
@@ -99,7 +98,3 @@ jupyter notebook NCR_Ride_Booking_Analysis.ipynb
 ## License
 
 Specify a license for this project (e.g. MIT) if you plan to share or reuse this code.
-=======
-# ncr_ride_bookings
-This project analyzes 150,000 ride bookings across Delhi NCR to uncover demand patterns, route performance, vehicle efficiency, and customer behavior. It applies machine learning, clustering, and neural networks to predict ride completion, segment trips, and generate actionable business insights for ride-hailing optimization.
->>>>>>> 482f1704927676d629100bc89f82b845ccd6b918
